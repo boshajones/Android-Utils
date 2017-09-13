@@ -1,0 +1,14 @@
+<resources>
+	<string name="app_name">hhlUtils</string>
+
+	<string name="send_email">Send Email…</string>
+	<string name="error_cannot_open_app_settings">Cannot open application settings</string>
+	<string name="error_cannot_open_dialler">Cannot open phone dialler</string>
+	<string name="error_cannot_make_phone_calls">Cannot make phone calls on this device</string>
+	<string name="error_cannot_open_sms">Cannot open SMS app</string>
+	<string name="error_cannot_share_string">Cannot share message</string>
+	<string name="error_cannot_share_image">Cannot share image</string>
+	<string name="error_cannot_open_camera">Cannot open camera app</string>
+	<string name="error_cannot_open_gallery">Cannot open gallery app</string>
+	<string name="error_cannot_open_maps">Cannot open maps app</string>
+</resources>
