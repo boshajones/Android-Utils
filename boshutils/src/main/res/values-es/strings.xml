@@ -1,0 +1,13 @@
+<resources>
+	<string name="just_now">Justo ahora</string>
+	<string name="send_email">Enviar correo electrónico…</string>
+	<string name="error_cannot_open_app_settings">No se puede abrir la configuración de la aplicación</string>
+	<string name="error_cannot_open_dialler">No se puede abrir el marcador telefónico</string>
+	<string name="error_cannot_make_phone_calls">No se pueden realizar llamadas telefónicas en este dispositivo</string>
+	<string name="error_cannot_open_sms">No se puede abrir la aplicación SMS</string>
+	<string name="error_cannot_share_string">No se puede compartir el mensaje</string>
+	<string name="error_cannot_share_image">No se puede compartir la imagen</string>
+	<string name="error_cannot_open_camera">No se puede abrir la aplicación de cámara</string>
+	<string name="error_cannot_open_gallery">No se puede abrir la aplicación de la galería</string>
+	<string name="error_cannot_open_maps">No se puede abrir la aplicación de mapas</string>
+</resources>

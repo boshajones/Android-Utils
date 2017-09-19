@@ -1,0 +1,13 @@
+<resources>
+	<string name="just_now">прямо сейчас</string>
+	<string name="send_email">Отправка e-mail</string>
+	<string name="error_cannot_open_app_settings">Не удается открыть настройки приложения</string>
+	<string name="error_cannot_open_dialler">Не удается открыть телефонный номер</string>
+	<string name="error_cannot_make_phone_calls">Не удается выполнить телефонные звонки на этом устройстве</string>
+	<string name="error_cannot_open_sms">Не удается открыть приложение SMS</string>
+	<string name="error_cannot_share_string">Не удается передать сообщение</string>
+	<string name="error_cannot_share_image">Невозможно поделиться изображением</string>
+	<string name="error_cannot_open_camera">Не удается открыть приложение для камеры</string>
+	<string name="error_cannot_open_gallery">Не удается открыть приложение галереи</string>
+	<string name="error_cannot_open_maps">Не удается открыть приложение для карт</string>
+</resources>

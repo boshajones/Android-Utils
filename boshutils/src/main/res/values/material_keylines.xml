@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--
+	Material Design Typography and Key Lines
+	https://material.io/guidelines/style/typography.html
+	https://material.io/guidelines/layout/metrics-keylines.html
+	-->
+
+	<!-- Typography -->
+	<dimen name="material_typography_button">15sp</dimen>
+	<dimen name="material_typography_caption">13sp</dimen>
+	<dimen name="material_typography_body1">15sp</dimen>
+	<dimen name="material_typography_body2">15sp</dimen>
+	<dimen name="material_typography_subheading">17sp</dimen>
+	<dimen name="material_typography_title">21sp</dimen>
+	<dimen name="material_typography_headline">24sp</dimen>
+	<dimen name="material_typography_display1">34sp</dimen>
+	<dimen name="material_typography_display2">45sp</dimen>
+	<dimen name="material_typography_display3">56sp</dimen>
+	<dimen name="material_typography_display4">112sp</dimen>
+
+	<!-- Spacing -->
+	<dimen name="material_spacing_empty">0dp</dimen>
+	<dimen name="material_spacing_xx_small">2dp</dimen>
+	<dimen name="material_spacing_x_small">4dp</dimen>
+	<dimen name="material_spacing_small">8dp</dimen>
+	<dimen name="material_spacing_medium">12dp</dimen>
+	<dimen name="material_spacing_large">16dp</dimen>
+	<dimen name="material_spacing_x_large">24dp</dimen>
+	<dimen name="material_spacing_xx_large">56dp</dimen>
+	<dimen name="material_spacing_xxx_large">72dp</dimen>
+	<dimen name="material_spacing_xxxx_large">88dp</dimen>
+
+	<!-- Component -->
+	<dimen name="material_component_delimiter">1dp</dimen>
+	<dimen name="material_component_xx_small">24dp</dimen>
+	<dimen name="material_component_x_small">28dp</dimen>
+	<dimen name="material_component_small">40dp</dimen>
+	<dimen name="material_component_medium">48dp</dimen>
+	<dimen name="material_component_large">56dp</dimen>
+	<dimen name="material_component_x_large">64dp</dimen>
+	<dimen name="material_component_xx_large">72dp</dimen>
+	<dimen name="material_component_xxx_large">88dp</dimen>
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+	<string name="just_now">たった今</string>
+	<string name="send_email">メールを送る</string>
+	<string name="error_cannot_open_app_settings">アプリケーション設定を開くことができません</string>
+	<string name="error_cannot_open_dialler">電話ダイヤラを開くことができません</string>
+	<string name="error_cannot_make_phone_calls">この端末で通話できない</string>
+	<string name="error_cannot_open_sms">SMSアプリを開けません</string>
+	<string name="error_cannot_share_string">メッセージを共有できません</string>
+	<string name="error_cannot_share_image">画像を共有できません</string>
+	<string name="error_cannot_open_camera">カメラアプリを開けません</string>
+	<string name="error_cannot_open_gallery">ギャラリーアプリを開くことができません</string>
+	<string name="error_cannot_open_maps">マップアプリを開けません</string>
+</resources>

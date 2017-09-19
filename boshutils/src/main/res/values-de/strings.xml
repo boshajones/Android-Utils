@@ -1,0 +1,13 @@
+<resources>
+	<string name="just_now">Gerade jetzt</string>
+	<string name="send_email">E-Mail senden…</string>
+	<string name="error_cannot_open_app_settings">Die Anwendungseinstellungen können nicht geöffnet werden</string>
+	<string name="error_cannot_open_dialler">Der Telefonwähler kann nicht geöffnet werden</string>
+	<string name="error_cannot_make_phone_calls">Anrufe können nicht telefonieren</string>
+	<string name="error_cannot_open_sms">SMS kann nicht geöffnet werden</string>
+	<string name="error_cannot_share_string">Kann keine Nachricht teilen</string>
+	<string name="error_cannot_share_image">Kann kein Bild teilen</string>
+	<string name="error_cannot_open_camera">Kann die Kamera nicht öffnen</string>
+	<string name="error_cannot_open_gallery">Die grafische App kann nicht geöffnet werden</string>
+	<string name="error_cannot_open_maps">Kann Karten nicht öffnen</string>
+</resources>

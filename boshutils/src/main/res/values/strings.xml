@@ -1,6 +1,5 @@
 <resources>
-	<string name="app_name">hhlUtils</string>
-
+	<string name="just_now">Just Now</string>
 	<string name="send_email">Send Email…</string>
 	<string name="error_cannot_open_app_settings">Cannot open application settings</string>
 	<string name="error_cannot_open_dialler">Cannot open phone dialler</string>

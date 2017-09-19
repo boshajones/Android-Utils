@@ -1,0 +1,13 @@
+<resources>
+	<string name="just_now">الآن فقط</string>
+	<string name="send_email">ارسل بريد الكتروني…</string>
+	<string name="error_cannot_open_app_settings">لا يمكن فتح إعدادات التطبيق</string>
+	<string name="error_cannot_open_dialler">لا يمكن فتح طالب الهاتف</string>
+	<string name="error_cannot_make_phone_calls">لا يمكن إجراء مكالمات هاتفية على هذا الجهاز</string>
+	<string name="error_cannot_open_sms">لا يمكن فتح التطبيق سمز</string>
+	<string name="error_cannot_share_string">لا يمكن مشاركة الرسالة</string>
+	<string name="error_cannot_share_image">لا يمكن مشاركة الصورة</string>
+	<string name="error_cannot_open_camera">لا يمكن فتح التطبيق الكاميرا</string>
+	<string name="error_cannot_open_gallery">لا يمكن فتح معرض التطبيق</string>
+	<string name="error_cannot_open_maps">لا يمكن فتح خرائط التطبيق</string>
+</resources>
