@@ -24,7 +24,11 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
 
 /**
- * Created by David Jones on 05/09/2017
+ * Provides methods to convert between different units or objects, this includes dips and pixels,
+ * centimeters to feet, drawables to bitmaps, pounds to kilograms, views to bitmaps, and so on.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class UnitUtils {

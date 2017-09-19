@@ -24,7 +24,14 @@ import android.widget.Toast;
 import java.io.File;
 
 /**
- * Created by David Jones on 11/09/2017
+ * Manages functionality relating to the Android Intent system including the ability to launch or
+ * restart apps, and open app related settings screens. In addition, this class provides methods
+ * for wrapping intent calls to phone calls, sms, gallery, sharing, maps and more. These wrapper
+ * methods handle situations where the functionality isn't available on the device and display
+ * a translated error message to the user.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class IntentUtils {

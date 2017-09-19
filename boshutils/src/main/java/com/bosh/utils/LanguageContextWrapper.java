@@ -9,7 +9,12 @@ import android.support.annotation.NonNull;
 import java.util.Locale;
 
 /**
- * Created by David Jones on 12/09/2017
+ * Creates an instance of the Application {@link Context} with a {@link Locale} specified by language,
+ * this allows an application to change the language each activity implements based off user preference
+ * as opposed to what the current system locale settings specify.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class LanguageContextWrapper extends ContextWrapper {

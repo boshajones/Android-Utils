@@ -17,7 +17,10 @@ import android.telephony.TelephonyManager;
 import android.text.SpannableStringBuilder;
 
 /**
- * Created by David Jones on 12/09/2017
+ * Handles retrieving information about the users current device and for the current application.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class DeviceUtils {

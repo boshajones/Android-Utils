@@ -20,7 +20,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /**
- * Created by David Jones on 17/05/2017
+ * Handles common String related tasks, such as checking if the string is empty or null, removing
+ * non alphanumeric characters, and getting the height of the displayed text in pixels. This class
+ * also contains methods for adding and creating text {@link Spannable}s for features like coloured,
+ * bold, underlined, and clickable text.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class StringUtils {
@@ -43,6 +49,18 @@ public class StringUtils {
 	 */
 	public static boolean isEmpty(@Nullable String string) {
 		return string == null || string.trim().length() <= 0;
+	}
+
+	public static String cleanString(String string) {
+		return string.replace("\n", "").replace("\r", "")
+			.replaceAll("[^a-zA-Z0-9]", "").trim();
+	}
+
+	@Nullable
+	public static String removeNonDigits(@Nullable String string) {
+		if (string == null) return null;
+
+		return string.replaceAll("\\D+","");
 	}
 
 	public static int getTextHeight(@NonNull TextView textView) {

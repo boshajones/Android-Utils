@@ -8,7 +8,12 @@ import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.view.inputmethod.InputMethodManager;
 
 /**
- * Created by David Jones on 05/09/2017
+ * Handles common tasks relating to the Android soft keyboard including showing/hiding in addition
+ * to a callback for when the keyboard is opened or closed based off measuring the height of the root
+ * view. Hardware keyboards are not supported with this class.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class KeyboardUtils {

@@ -31,9 +31,17 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * Utilities class containing several common file utility methods useful across various projects
+ * Handles common methods relating to files and system storage on the device. This class includes
+ * methods to create files of arbitrary formats, read and write bytes to files, and can attempt
+ * to read a file path. By default three storage locations are available for new files, these are;
+ * App internal cache, Camera directory, and temporary storage.
  *
- * @author hedgehog lab
+ * This class also handles the {@link FileProvider} requirements enforced by Android 7.0 (Nougat), under the
+ * {application package}.utils.provider authority and using {@link FileProviderUtil} as the file
+ * provider target. If a project implementing this library creates a file provider with an identical
+ * namespace and authority, the project will fail to build when attempting to merge manifest files.
+ *
+ * @author David Jones
  * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
@@ -65,7 +73,7 @@ public class FileUtils {
 	public static Uri getFileUri(@NonNull Context context, @NonNull File file) {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
 			return FileProvider.getUriForFile(context,
-				context.getApplicationContext().getPackageName() + ".provider", file);
+				context.getApplicationContext().getPackageName() + ".utils.provider", file);
 		} else {
 			return Uri.fromFile(file);
 		}

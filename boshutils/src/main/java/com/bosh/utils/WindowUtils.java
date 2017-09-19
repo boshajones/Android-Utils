@@ -22,7 +22,12 @@ import android.view.WindowManager;
 import java.lang.reflect.Method;
 
 /**
- * Created by David Jones on 12/09/2017
+ * Provides methods relating to the system window displaying the application, including getting
+ * the heights, colours, and themes of the status and navigation bars, as well as methods to add/
+ * remove status bar margins from a view and open the system notifications.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class WindowUtils {

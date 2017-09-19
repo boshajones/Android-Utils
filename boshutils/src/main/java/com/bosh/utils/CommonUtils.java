@@ -37,9 +37,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Utilities class containing several common methods useful across various projects
+ * Handles common tasks used throughout multiple applications that don't necessarily fit within
+ * any of the other Utility classes.
  *
- * @author hedgehog lab
+ * @author David Jones
  * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})

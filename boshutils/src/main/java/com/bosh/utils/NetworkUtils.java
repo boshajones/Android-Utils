@@ -18,7 +18,13 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 
 /**
- * Created by David Jones on 11/09/2017
+ * Provides access to the network information of the device such as the wireless settings, checking
+ * to see if there is network connectivity, and what type of network it is. There is additionally
+ * a method to add and remove {@link ConnectivityListener} to listen for connectivity changes using
+ * a {@link BroadcastReceiver}. Listeners should be registered only for the duration updates are needed.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class NetworkUtils {
@@ -31,7 +37,7 @@ public class NetworkUtils {
 
 	@Nullable
 	@RequiresPermission(permission.ACCESS_NETWORK_STATE)
-	private static NetworkInfo getActiveNetworkInfo(@NonNull Context context) {
+	public static NetworkInfo getActiveNetworkInfo(@NonNull Context context) {
 		ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 		if (connectivityManager != null) {
 			return connectivityManager.getActiveNetworkInfo();
@@ -98,7 +104,7 @@ public class NetworkUtils {
 		final ConnectivityReceiver receiver = new ConnectivityReceiver(listener, holdWeakReference);
 		sConnectivityListenerMap.put(listener, receiver);
 		context.registerReceiver(receiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
-		receiver.notify(isConnected(context));
+		receiver.notify(context, isConnected(context));
 	}
 
 	@RequiresPermission(permission.ACCESS_NETWORK_STATE)
@@ -130,17 +136,19 @@ public class NetworkUtils {
 		@Override
 		@RequiresPermission(permission.ACCESS_NETWORK_STATE)
 		public void onReceive(@NonNull Context context, @NonNull Intent intent) {
-			notify(isConnected(context));
-			unregisterConnectivityReceiver(context, null);
+			notify(context, isConnected(context));
 		}
 
-		private void notify(boolean isConnected) {
+		@RequiresPermission(permission.ACCESS_NETWORK_STATE)
+		private void notify(@NonNull Context context, boolean isConnected) {
 			if (mLastConnectedStatus == null || mLastConnectedStatus != isConnected) {
 				mLastConnectedStatus = isConnected;
 
 				ConnectivityListener listener = getConnectivityListener();
 				if (listener != null) {
 					listener.onConnectivityChange(mLastConnectedStatus);
+				} else {
+					unregisterConnectivityReceiver(context, null);
 				}
 			}
 		}

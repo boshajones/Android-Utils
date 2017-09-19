@@ -40,9 +40,11 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * Utilities class containing several common image utility methods useful across various projects
+ * Provides methods related to images and image manipulation including; tinting drawables, compressing
+ * bitmaps, and creating thumbnails. In addition there are several gallery methods including the
+ * ability to add an Image File to the Media Store and retrieving the users recent images.
  *
- * @author hedgehog lab
+ * @author David Jones
  * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})

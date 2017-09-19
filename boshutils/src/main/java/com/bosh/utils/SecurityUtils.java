@@ -13,7 +13,14 @@ import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * Created by David Jones on 18/07/2017
+ * *Work in Progress*
+ *
+ * Manages encrypting and decrypting data in the form of {@link String} or {@link File} objects using
+ * AES 256 encryption algorithm. This class must be initialised with a password and a salt before
+ * being able to encrypt and decrypt the data.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class SecurityUtils {

@@ -5,7 +5,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /**
- * Created by David Jones on 12/09/2017
+ * Describes units of memory, used within the {@link UnitUtils} class.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @IntDef({MemoryUnit.BYTE, MemoryUnit.KB, MemoryUnit.MB, MemoryUnit.GB})
 @Retention(RetentionPolicy.SOURCE)

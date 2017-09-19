@@ -4,7 +4,13 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 
 /**
- * Created by David Jones on 05/09/2017
+ * Handles logging within this Library. This class is not intended to be used outside of the Utils
+ * library, but can be access to turn debug and error logging on and off. In addition to this, there
+ * is a method that chops up a long string into multiple chunks and displays them in a terminal instead
+ * of cutting the string off.
+ *
+ * @author David Jones
+ * @version 1.0
  */
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class UtilLogger {
